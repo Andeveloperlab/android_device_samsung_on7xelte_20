@@ -57,6 +57,7 @@ ro.smps.enable=true
 telephony.lteOnCdmaDevice=0
 ro.use_data_netmgrd=false
 persist.data.netmgrd.qos.enable=false
+ro.telephony.mms_data_profile=5
 
 # read DS/SS property
 import /efs/factory.prop *
