@@ -5654,6 +5654,10 @@ typedef struct {
 /* SNDMGR */
 #define RIL_UNSOL_SNDMGR_WB_AMR_REPORT 20017
 #define RIL_UNSOL_SNDMGR_CLOCK_CTRL 20022
+#define RIL_REQUEST_ACKNOWLEDGE_RIL_CONNECTED 10037
+#define RIL_REQUEST_EMERGENCY_SEARCH 10038
+#define RIL_REQUEST_EMERGENCY_CONTROL 10039
+#define RIL_REQUEST_SIM_GET_ATR 10040
 
 /***********************************************************************/
 
