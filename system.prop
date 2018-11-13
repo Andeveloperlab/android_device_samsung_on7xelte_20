@@ -45,6 +45,7 @@ ro.netflix.bsp_rev=Q660-13149-1
 
 # Radio
 persist.radio.sib16_support=0
+rild.libargs=-d /dev/umts_ipc0
 ro.ril.hsxpa=1
 ro.ril.gprsclass=10
 ro.ril.telephony.mqanelements=6
@@ -58,6 +59,9 @@ telephony.lteOnCdmaDevice=0
 ro.use_data_netmgrd=false
 persist.data.netmgrd.qos.enable=false
 ro.telephony.mms_data_profile=5
+telephony.lteOnCdmaDevice=0
+vendor.sec.rild.libpath=/vendor/lib64/libsec-ril.so
+vendor.sec.rild.libpath2=/vendor/lib64/libsec-ril-dsds.so
 
 # read DS/SS property
 import /efs/factory.prop *
