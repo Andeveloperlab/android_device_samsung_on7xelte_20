@@ -154,6 +154,7 @@ TARGET_USES_MKE2FS := true
 
 # Fingerprint HAL to be built from hardware/samsung
 TARGET_SEC_FP_CALL_NOTIFY_ON_CANCEL := true
+TARGET_SEC_FP_CALL_CANCEL_ON_ENROLL_COMPLETION := true
 TARGET_SEC_FP_USES_PERCENTAGE_SAMPLES := true
 
 # Fonts
