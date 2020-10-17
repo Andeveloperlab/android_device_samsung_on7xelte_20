@@ -138,6 +138,9 @@ WITH_DEXPREOPT_DEBUG_INFO := false
 
 TARGET_PRODUCT_PROP += device/samsung/on7xelte/product.prop
 
+# Legacy memfd
+TARGET_HAS_MEMFD_BACKPORT := true
+
 # Display
 TARGET_DISABLE_POSTRENDER_CLEANUP := true
 
