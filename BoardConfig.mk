@@ -162,6 +162,7 @@ SMALLER_FONT_FOOTPRINT := true
 # Graphics
 USE_OPENGL_RENDERER := true
 BOARD_USES_EXYNOS5_COMMON_GRALLOC := true
+TARGET_DISABLE_POSTRENDER_CLEANUP := true
 
 # Samsung HALs to be built from hardware/samsung
 TARGET_AUDIOHAL_VARIANT := samsung
