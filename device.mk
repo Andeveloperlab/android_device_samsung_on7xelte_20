@@ -235,12 +235,6 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.deprecated@1.0 \
     libcutils_shims
 
-# IPv6
-PRODUCT_PACKAGES += \
-    ebtables \
-    ethertypes \
-    libebtc
-
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.samsungexynos7870 \
