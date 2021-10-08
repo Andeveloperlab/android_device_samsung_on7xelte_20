@@ -83,6 +83,11 @@ PRODUCT_PACKAGES += \
     charger_res_images \
     lineage_charger_res_images
 
+# Control groups and task profiles
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/cgroups.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
+    $(LOCAL_PATH)/configs/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
+
 # Disable trace
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.traced.enable=0
