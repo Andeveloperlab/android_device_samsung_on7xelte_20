@@ -118,6 +118,9 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/samsung
 
 PRODUCT_PROPERTY_OVERRIDES += \
+    debug.renderengine.backend=threaded
+
+PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.sf.disable_blurs=1 \
     ro.sf.blurs_are_expensive=1
 
