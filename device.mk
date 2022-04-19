@@ -63,6 +63,10 @@ PRODUCT_PACKAGES += \
 # Boot Animtion
 TARGET_BOOTANIMATION_HALF_RES := true
 
+# Hardware
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.egl=mali
+
 # Camera
  PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
