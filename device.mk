@@ -63,6 +63,11 @@ PRODUCT_PACKAGES += \
 # Boot Animtion
 TARGET_BOOTANIMATION_HALF_RES := true
 
+# SoC
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.soc.manufacturer=Samsung \
+    ro.soc.model=Exynos7870
+
 # Hardware
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.egl=mali
