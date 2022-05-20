@@ -23,6 +23,7 @@ TARGET_SPECIFIC_HEADER_PATH += $(LOCAL_PATH)/include
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+PRODUCT_DEXPREOPT_SPEED_APPS += SystemUI
 
 # Boot animation
 TARGET_SCREEN_WIDTH := 1080
