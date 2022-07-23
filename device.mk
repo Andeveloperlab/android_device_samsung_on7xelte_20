@@ -108,6 +108,10 @@ PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 PRODUCT_SOONG_NAMESPACES += \
     hardware/samsung
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.sf.disable_blurs=1 \
+    ro.sf.blurs_are_expensive=1
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
@@ -143,7 +147,9 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-service \
     android.hardware.graphics.mapper@2.0-impl
 
+# SurfaceFlinger
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.surface_flinger.supports_background_blur=0 \
     ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 
 # Healthd
