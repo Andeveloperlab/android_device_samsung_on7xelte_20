@@ -31,7 +31,7 @@ TARGET_SCREEN_HEIGHT := 1920
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@7.0-impl \
-    android.hardware.audio.service \
+    android.hardware.audio.service.exynos7870 \
     android.hardware.audio.effect@7.0-impl \
     audio.primary.default \
     audio.primary.universal7870 \
