@@ -72,7 +72,8 @@ TARGET_BOOTANIMATION_HALF_RES := true
     camera.universal7870 \
     libcamera_client_shim \
     libexynoscamera_shim \
-    libstagefright_shim
+    libstagefright_shim \
+    Camera2
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/camera/external_camera_config.xml:system/vendor/etc/external_camera_config.xml
