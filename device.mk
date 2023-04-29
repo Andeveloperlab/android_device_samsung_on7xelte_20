@@ -123,6 +123,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/samsung
 
 PRODUCT_PROPERTY_OVERRIDES += \
+    debug.sf.disable_backpressure=1 \
     debug.renderengine.backend=threaded
 
 PRODUCT_PROPERTY_OVERRIDES += \
