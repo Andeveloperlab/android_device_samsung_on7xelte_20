@@ -142,6 +142,9 @@ TARGET_PRODUCT_PROP += device/samsung/on7xelte/product.prop
 # Legacy memfd
 TARGET_HAS_MEMFD_BACKPORT := true
 
+# Verified Boot
+BOARD_AVB_ENABLE := false
+
 # Display
 TARGET_DISABLE_POSTRENDER_CLEANUP := true
 
