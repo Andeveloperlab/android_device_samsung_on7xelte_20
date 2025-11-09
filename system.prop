@@ -70,6 +70,9 @@ ro.sys.sdcardfs=true
 # Set fdsan security level warn once
 debug.fdsan=warn_once
 
+# Camera
+camera2.portability.force_api=1
+
 # Wifi
 wifi.interface=wlan0
 
