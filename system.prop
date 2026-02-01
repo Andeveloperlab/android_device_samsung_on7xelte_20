@@ -9,6 +9,9 @@ af.fast_track_multiplier=1
 ro.config.vc_call_vol_steps=15
 audio_hal.disable_two_mic=true
 
+# BPF
+ro.kernel.ebpf.supported=false
+
 # Dalvik Heap
 dalvik.vm.heapstartsize=16m
 dalvik.vm.heapgrowthlimit=288m
