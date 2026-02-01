@@ -487,7 +487,6 @@ service charger /system/bin/charger
     user system
     group system graphics input
     capabilities SYS_BOOT
-    seclabel u:r:charger:s0
 
 on property:sys.boot_completed=1
     # force disable hw overlays to be true
