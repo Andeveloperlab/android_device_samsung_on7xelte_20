@@ -1,0 +1,2 @@
+extern void _ZN7android13SensorService26addProximityActiveListenerERKNS_2spINS0_23ProximityActiveListenerEEE() {}
+extern void _ZN7android13SensorService29removeProximityActiveListenerERKNS_2spINS0_23ProximityActiveListenerEEE() {}
