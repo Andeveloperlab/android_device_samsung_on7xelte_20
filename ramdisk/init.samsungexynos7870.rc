@@ -16,6 +16,9 @@ on init
     # Storage views to support runtime permissions
     mkdir /storage 0755 root root
 
+    # Mount cgroup mount point for cpu accounting
+    mount cgroup none /acct cpuacct
+
     write /dev/cpuctl/cpu.shares 1024
 
     mkdir /dev/cpuctl/bg_non_interactive
