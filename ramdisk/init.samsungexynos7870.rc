@@ -380,6 +380,11 @@ on boot
     chmod 444 /sys/class/sec/sdcard/cd_cnt
     chown system system /sys/class/sec/sddata/sd_data
     chmod 444 /sys/class/sec/sddata/sd_data
+
+    # Access permission for input_suspend
+    chown system system /sys/class/power_supply/battery/input_suspend
+    chmod 0666 /sys/class/power_supply/battery/input_suspend
+
 on fs
     mount_all /vendor/etc/fstab.samsungexynos7870 --early
 
