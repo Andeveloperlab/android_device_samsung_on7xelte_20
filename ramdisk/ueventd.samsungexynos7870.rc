@@ -60,7 +60,7 @@
 /dev/iio:device*          0660   system		system
 /sys/devices/13930000.spi/spi_master/spi2/spi2.0/iio:device*    buffer/enable       0660    system    system
 /sys/devices/13930000.spi/spi_master/spi2/spi2.0/iio:device*    buffer/length       0660    system    system
-/sys/bus/iio/devices/iio:device*    0664   system     radio
+/sys/bus/iio/devices/iio:device_*    0664   system     radio
 
 # sensorhub
 /dev/ssp_sensorhub        0660   system     system
@@ -71,11 +71,11 @@
 /dev/iio:device*          0660   system		system
 /sys/devices/13930000.spi/spi_master/spi2/spi2.0/iio:device*    buffer/enable       0660    system    system
 /sys/devices/13930000.spi/spi_master/spi2/spi2.0/iio:device*    buffer/length       0660    system    system
-/sys/bus/iio/devices/iio:device*    0664   system     radio
+/sys/bus/iio/devices/iio:device_*    0664   system     radio
 
 # IIO
 /dev/iio:device*          0660   system		system
-/sys/bus/iio/devices/iio:device*    0664   system     radio
+/sys/bus/iio/devices/iio:device_*    0664   system     radio
 
 # Google FRP solution
 /dev/block/platform/13540000.dwmmc0/by-name/PERSISTENT    0660    system    system
