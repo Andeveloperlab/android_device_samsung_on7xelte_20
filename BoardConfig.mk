@@ -178,6 +178,7 @@ BOARD_KERNEL_PAGESIZE := 2048
 TARGET_LINUX_KERNEL_VERSION := 3.18
 TARGET_KERNEL_SOURCE := kernel/samsung/exynos7870
 TARGET_KERNEL_CONFIG := exynos7870-on7xelteswa_defconfig
+TARGET_KERNEL_CLANG_COMPILE := false
 
 # Custom mkbootimg from hardware/samsung
 BOARD_CUSTOM_BOOTIMG_MK := hardware/samsung/mkbootimg.mk
