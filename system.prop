@@ -38,6 +38,7 @@ ro.surface_flinger.supports_background_blur=false
 persist.sys.sf.disable_blurs=true
 persist.sys.hwui.renderer=opengl
 debug.hwui.renderer=opengl
+debug.renderengine.backend=threaded
 
 # Boot directly from charger mode
 ro.enable_boot_charger_mode=1
