@@ -83,10 +83,6 @@ PRODUCT_PACKAGES += \
     charger_res_images \
     lineage_charger_res_images
 
-# Configstore
-PRODUCT_PACKAGES += \
-    android.hardware.configstore@1.1-service
-
 # Disable trace
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.traced.enable=0
