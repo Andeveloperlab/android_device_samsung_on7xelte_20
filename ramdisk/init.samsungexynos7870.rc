@@ -115,6 +115,14 @@ on post-fs-data
 
     mkdir /data/anr 0775 system system encryption=None
 
+    # create directory for DRM plug-ins - give drm the read/write access to
+    # the following directory.
+    mkdir /data/drm 0770 drm drm
+
+    # create directory for MediaDrm plug-ins - give drm the read/write access to
+    # the following directory.
+    mkdir /data/mediadrm 0770 mediadrm mediadrm
+
 on boot
     # 1-key hard reset
     chown system system /sys/power/reset_enabled
