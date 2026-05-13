@@ -19,7 +19,7 @@ lib/libstainkiller.so
 lib/libHpr_RecFace_dl_v1.0.so
 lib/libHpr_RecGAE_cvFeature_v1.0.so
 lib/libHpr_TaskFaceClustering_hierarchical_v1.0.so
-vendor/firmware/setfile_4h5yc.bin
+vendor/firmware/setfile_3m3.bin
 vendor/firmware/setfile_imx258.bin
 vendor/lib/libOpenCv.so:lib/libOpenCv.so
 vendor/lib/libHpr_LocLandmark_sdm_v1.0.so

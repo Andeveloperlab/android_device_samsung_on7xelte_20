@@ -14,13 +14,13 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/samsung/on7xelte
+LOCAL_PATH := device/samsung/on7xreflte
 
 # Include headers
 TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
 
 # OTA
-TARGET_OTA_ASSERT_DEVICE := on7xelte,on7xeltedd,on7xeltekl,on7xeltekk,on7xelteks,on7xelteub,on7xeltezt
+TARGET_OTA_ASSERT_DEVICE := on7xreflte,on7xrefltedd
 
 # Firmware
 TARGET_NO_BOOTLOADER := true
@@ -177,7 +177,7 @@ BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_PAGESIZE := 2048
 TARGET_LINUX_KERNEL_VERSION := 3.18
 TARGET_KERNEL_SOURCE := kernel/samsung/exynos7870
-TARGET_KERNEL_CONFIG := exynos7870-on7xelteswa_defconfig
+TARGET_KERNEL_CONFIG := exynos7870-on7xreflteswa_defconfig
 TARGET_KERNEL_CLANG_COMPILE := false
 
 # Custom mkbootimg from hardware/samsung
@@ -225,7 +225,7 @@ TARGET_PROCESS_SDK_VERSION_OVERRIDE += \
     /system/vendor/bin/hw/rild=27
 
 # SELinux
-BOARD_SEPOLICY_DIRS := device/samsung/on7xelte/sepolicy
+BOARD_SEPOLICY_DIRS := device/samsung/on7xreflte/sepolicy
 BOARD_SEPOLICY_VERS := $(PLATFORM_SDK_VERSION).0
 SELINUX_IGNORE_NEVERALLOWS := true
 
@@ -281,7 +281,7 @@ WPA_SUPPLICANT_USE_HIDL          := true
 BOARD_HAVE_SAMSUNG_WIFI          := true
 
 # Inherit from the proprietary version
--include vendor/samsung/on7xelte/BoardConfigVendor.mk
+-include vendor/samsung/on7xreflte/BoardConfigVendor.mk
 
 # Build fingerprint Raven march 2022
 BUILD_FINGERPRINT := "google/raven/raven:12/S3B1.220218.006/8325196:user/release-keys"

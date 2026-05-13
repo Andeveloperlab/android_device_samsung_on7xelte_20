@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_on7xelte.mk
+    $(LOCAL_DIR)/lineage_on7xreflte.mk
 
 COMMON_LUNCH_CHOICES += \
-    lineage_on7xelte-user \
-    lineage_on7xelte-userdebug \
-    lineage_on7xelte-eng
+    lineage_on7xreflte-user \
+    lineage_on7xreflte-userdebug \
+    lineage_on7xreflte-eng

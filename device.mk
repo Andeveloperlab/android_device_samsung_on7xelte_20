@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/samsung/on7xelte
+LOCAL_PATH := device/samsung/on7xreflte
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
@@ -333,4 +333,4 @@ PRODUCT_COPY_FILES += \
     prebuilts/vndk/v29/arm64/arch-arm-armv8-a/shared/vndk-core/libprotobuf-cpp-lite.so:$(TARGET_COPY_OUT_VENDOR)/lib/libprotobuf-cpp-lite-v29.so
 
 # call the proprietary setup
-$(call inherit-product, vendor/samsung/on7xelte/on7xelte-vendor.mk)
+$(call inherit-product, vendor/samsung/on7xreflte/on7xreflte-vendor.mk)
