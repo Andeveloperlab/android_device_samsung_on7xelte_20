@@ -14,7 +14,7 @@
 // limitations under the License.
 
 cc_library {
-    name: "libcutils_shim",
+    name: "libcutils_shims",
     srcs: [
         "strdup16to8.cpp",
         "strdup8to16.cpp",

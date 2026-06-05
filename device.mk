@@ -33,7 +33,6 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
     android.hardware.audio.service \
     android.hardware.audio.effect@6.0-impl \
-    audio.a2dp.default \
     audio.primary.default \
     audio.primary.universal7870 \
     audio.r_submix.default \
@@ -49,7 +48,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/mixer_paths_0.xml:system/vendor/etc/mixer_paths_0.xml
 
 PRODUCT_COPY_FILES += \
-    frameworks/av/services/audiopolicy/config/a2dp_audio_policy_configuration.xml:system/vendor/etc/a2dp_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/audio_policy_volumes.xml:system/vendor/etc/audio_policy_volumes.xml \
     frameworks/av/services/audiopolicy/config/default_volume_tables.xml:system/vendor/etc/default_volume_tables.xml \
     frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:system/vendor/etc/r_submix_audio_policy_configuration.xml \
@@ -103,6 +101,10 @@ PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 # the size of the system image. This has no bearing on stack traces, but wi$
 # leave less information available via JDWP.
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
+
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    hardware/samsung
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -232,7 +234,7 @@ PRODUCT_PACKAGES += \
     libril \
     android.hardware.radio@1.0 \
     android.hardware.radio.deprecated@1.0 \
-    libcutils_shim
+    libcutils_shims
 
 # IPv6
 PRODUCT_PACKAGES += \
@@ -330,7 +332,8 @@ PRODUCT_PACKAGES += \
 
 # Vndk
 PRODUCT_COPY_FILES += \
-    prebuilts/vndk/v29/arm64/arch-arm-armv8-a/shared/vndk-core/libprotobuf-cpp-lite.so:$(TARGET_COPY_OUT_VENDOR)/lib/libprotobuf-cpp-lite-v29.so
+    prebuilts/vndk/v29/arm64/arch-arm-armv8-a/shared/vndk-core/libprotobuf-cpp-lite.so:$(TARGET_COPY_OUT_VENDOR)/lib/libprotobuf-cpp-lite-v29.so \
+    prebuilts/vndk/v32/arm64/arch-arm-armv8-a/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libutils-v32.so
 
 # call the proprietary setup
 $(call inherit-product, vendor/samsung/on7xelte/on7xelte-vendor.mk)
