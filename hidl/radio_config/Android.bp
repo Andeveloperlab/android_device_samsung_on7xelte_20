@@ -1,6 +1,6 @@
 cc_binary {
-    name: "android.hardware.radio.config@1.1-service.msm8916",
-    init_rc: ["android.hardware.radio.config@1.1-service.msm8916.rc"],
+    name: "android.hardware.radio.config@1.1-service.on7xelte",
+    init_rc: ["android.hardware.radio.config@1.1-service.on7xelte.rc"],
     relative_install_path: "hw",
     vendor: true,
     srcs: [
