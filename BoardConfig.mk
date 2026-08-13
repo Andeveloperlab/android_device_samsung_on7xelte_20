@@ -136,7 +136,7 @@ USE_DEX2OAT_DEBUG := false
 # DexPreopt debug info
 WITH_DEXPREOPT_DEBUG_INFO := false
 
-TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
+TARGET_PRODUCT_PROP += device/samsung/on7xelte/product.prop
 
 # Display
 TARGET_DISABLE_POSTRENDER_CLEANUP := true
