@@ -236,7 +236,7 @@ PRODUCT_PACKAGES += \
     libril \
     android.hardware.radio@1.0 \
     android.hardware.radio.config@1.1-service.on7xelte \
-    android.hardware.radio@1.4-service.legacy \
+    android.hardware.radio@1.4-service.on7xelte \
     android.hardware.radio.deprecated@1.0 \
     libcutils_shims
 
