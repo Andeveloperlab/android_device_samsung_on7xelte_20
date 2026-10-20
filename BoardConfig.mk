@@ -216,10 +216,6 @@ TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop
 BOARD_HAS_DOWNLOAD_MODE := true
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/ramdisk/fstab.samsungexynos7870
 
-# Apex
-BOARD_USES_FLATTENED_APEX := true
-PRODUCT_USE_FLATTENED_APEX := true
-
 # Security patch level
 VENDOR_SECURITY_PATCH := 2018-03-07
 
