@@ -112,6 +112,17 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.sf.disable_blurs=1 \
     ro.sf.blurs_are_expensive=1
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.dex2oat64.enabled=false \
+    dalvik.vm.dex2oat-swap=false \
+    dalvik.vm.image-dex2oat-threads=4 \
+    dalvik.vm.image-dex2oat-cpu-set=0,1,2,3 \
+    dalvik.vm.dex2oat-threads=4 \
+    dalvik.vm.dex2oat-cpu-set=0,1,2,3 \
+    dalvik.vm.boot-dex2oat-threads=4 \
+    dalvik.vm.boot-dex2oat-cpu-set=0,1,2,3 \
+    ro.sys.fw.dex2oat_thread_count=4
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
