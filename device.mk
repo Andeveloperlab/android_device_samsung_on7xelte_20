@@ -125,7 +125,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.disable_backpressure=1 \
-    debug.renderengine.backend=threaded
+    debug.renderengine.backend=gles
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.sf.color_saturation=1.0 \
