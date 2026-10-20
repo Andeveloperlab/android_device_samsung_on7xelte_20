@@ -123,7 +123,6 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/samsung
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    debug.sf.enable_transaction_tracing=false \
     debug.renderengine.backend=threaded
 
 PRODUCT_PROPERTY_OVERRIDES += \
