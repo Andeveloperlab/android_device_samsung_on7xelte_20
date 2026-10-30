@@ -80,3 +80,8 @@ persist.sys.wfd.virtual=0
 
 # VNDK
 ro.vndk.version=current
+
+# Bluetooth profiles
+bluetooth.profile.a2dp.source.enabled=true
+bluetooth.profile.hfp.ag.enabled=true
+bluetooth.profile.hfp.hf.enabled=true
